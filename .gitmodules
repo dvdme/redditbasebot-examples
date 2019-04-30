@@ -1,0 +1,4 @@
+[submodule "redditbasebot"]
+	path = redditbasebot
+	url = https://github.com/dvdme/redditbasebot.git
+	branch = master

@@ -102,3 +102,10 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Custom
+
+config.pt
+praw.ini
+*.log
+*.log.*

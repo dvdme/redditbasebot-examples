@@ -11,3 +11,12 @@ This repository has a submodule, to clone it:
 
 
 `git submodule update --init`
+
+
+Copy and configure config files as needed:
+
+
+`cp config.py.example config.py`
+
+
+`cp praw.ini.example praw.ini`

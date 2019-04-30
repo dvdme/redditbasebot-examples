@@ -32,11 +32,11 @@ class DummyBotDoer(Doer):
     def __init__(self, bot):
         super().__init__(bot)
 
-    def doer_logic(self):
+    def worker_logic(self):
         try:
             pass
         except praw.exceptions.APIException as ex_msg:
-            self.log.error('praw.exceptions.APIException inside doer_logic')
+            self.log.error('praw.exceptions.APIException inside worker_logic')
             self.log.error(ex_msg)
             time_to_sleep = BotUtil.try_get_seconds_to_wait(str(ex_msg))
             self.log.info(f'Waiting for {time_to_sleep} until next doer because reddit of api exception')

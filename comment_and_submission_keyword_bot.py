@@ -113,7 +113,7 @@ class CommentKeywordDoer(Doer):
 
 
 if __name__ == '__main__':
-    bot = Bot()
+    bot = Bot('dummy')
     workers = [SubmissionKeywordWatcher(bot), CommentKeywordWatcher(bot), \
         KeywordFilter(bot), SubmissionKeywordDoer(bot), CommentKeywordDoer(bot)]    
     bot.add_worker(workers)

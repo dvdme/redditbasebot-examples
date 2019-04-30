@@ -68,7 +68,7 @@ class CommentKeywordDoer(Doer):
 
 
 if __name__ == '__main__':
-    bot = Bot()
+    bot = Bot('dummy')
     workers = [CommentKeywordWatcher(bot), CommentKeywordFilter(bot), CommentKeywordDoer(bot)]
     bot.add_worker(workers)
     bot.run()
